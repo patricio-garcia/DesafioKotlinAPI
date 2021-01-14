@@ -17,7 +17,7 @@ class Repo {
             true -> {
                 response.body()?.let { userList ->
                     val r = userList.map { mapAPI2DB(it) }
-                    userDatabse.userDao().intertUser(r)
+                    userDatabse.userDao().insertUser(r)
                 }
             }
             false -> {

@@ -8,5 +8,5 @@ fun mapAPI2DB(user: User): UserEntity {
 }
 
 fun mapDB2API(user: UserEntity): User {
-    return User(user.userId, user.userName, user.userEmail, user.userPhone)
+    return User(user.id, user.name, user.email, user.phone)
 }
